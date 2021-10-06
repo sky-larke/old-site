@@ -1,8 +1,8 @@
 baseURL = 'http://erinpark.org/'
 languageCode = 'en-us'
-title = 'Erin Park's Portfolio'
+title = "Erin Park's Portfolio"
 theme = "archie"
-copyright = "© Erin Park
+copyright = "© Erin Park"
 
 # Code Highlight
 pygmentsstyle = "monokai"
