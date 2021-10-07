@@ -1,13 +1,13 @@
 /* Markdown */
 :root{
---maincolor: red;
---bordercl:rebeccapurple;
---callouctcolor:dodgerblue;
---hovercolor:navy;
---darkMaincolor: #50fa7b;
+--maincolor: #4aa881;
+--bordercl: #bc4a9b;
+--callouctcolor:#2d4a54;
+--hovercolor: #bc4a9b;    /* bubblegum */
+--darkMaincolor: #0c7475;
 }
 html {
-  color: #232333;
+  color: #3a2b3b;
   font-family: 'Roboto Mono', monospace;
   font-size: 15px;
   line-height: 1.6em;
@@ -21,8 +21,8 @@ body{
 }
 
 ::selection {
-  background: var(--maincolor);
-  color: #fff;
+  background: var(--hovercolor);
+  color: #ffd8ba;
 }
 
 p {
@@ -50,7 +50,7 @@ a {
 }
 a:hover {
     background-color: var(--hovercolor);
-    color: #fff;
+    color: #ffd8ba;
 }
 
 ul {
@@ -209,11 +209,11 @@ justify-content: space-between;
   content: "🏷 ";
 }
 .tags a{
-  border-bottom: 3px solid var(--maincolor); 
+  border-bottom: 3px solid var(--maincolor);
 }
 .tags a:hover{
   color:white;
-  background-color: var(--hovercolor); 
+  background-color: var(--hovercolor);
 }
 svg{
   max-height: 15px;
@@ -221,7 +221,7 @@ svg{
 .soc:hover{
   color: white;
 }
-.draft-label{ 
+.draft-label{
     color: var(--bordercl);
     text-decoration: none;
     padding: 2px 4px;
@@ -272,7 +272,7 @@ color:white
 .highlight pre code[class*='language-json']::before{
 content: 'json';
 background: dodgerblue;
- color: #000000 
+ color: #000000
 }
 .highlight pre code[class*='language-python']::before,
 .highlight pre code[class*='language-py']::before {
