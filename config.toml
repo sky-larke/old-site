@@ -1,7 +1,6 @@
-baseURL = 'https://erinpark.org/'
+baseURL = 'https://www.erinpark.org/'
 languageCode = 'en-us'
 title = "Erin Park's Portfolio"
-theme = "archie_fork"
 copyright = "© Erin Park"
 
 
@@ -20,7 +19,11 @@ paginate=3 # articles per page
 
 [[params.social]]
 name = "GitHub"
-icon = "github"
+icon = "/icons/day-github.png"
+url = "https://github.com/sky-larke"
+
+name = "Email"
+icon = "/icons/day-email.png"
 url = "https://github.com/sky-larke"
 
 
