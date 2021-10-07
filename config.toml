@@ -1,7 +1,7 @@
 baseURL = 'https://erinpark.org/'
 languageCode = 'en-us'
 title = "Erin Park's Portfolio"
-theme = "archie"
+theme = "archie_fork"
 copyright = "© Erin Park"
 
 # Code Highlight
