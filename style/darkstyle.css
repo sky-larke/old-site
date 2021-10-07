@@ -16,7 +16,7 @@ body {
 
 ::-moz-selection {
   background: var(--bubblegum);
-  color: var(--pale_dawn);
+  color: var(--pale-dawn);
   text-shadow: none;
 }
 
@@ -46,11 +46,11 @@ blockquote {
 }
 a:hover {
   background-color: var(--bubblegum);
-  color: #ffd8ba;
+  color: var(--pale_dawn);
 }
 .tags a:hover{
   background-color: var(--bubblegun);
-  color: #ffd8ba;
+  color: var(--pale_dawn);
 }
 
 h1,

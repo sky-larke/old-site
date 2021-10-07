@@ -1,4 +1,4 @@
 # portfolio site
-## [site link](https://www.erinpark.org)
+[site link](https://www.erinpark.org)
 
 WIP
