@@ -1,10 +1,17 @@
 /* Markdown */
 :root{
---maincolor: #4aa881;
---bordercl: #bc4a9b;
---callouctcolor:#2d4a54;
---hovercolor: #bc4a9b;    /* bubblegum */
---darkMaincolor: #0c7475;
+  --aubergine: #3a2b3b;
+  --sea_teal: #0c7475;
+  --dark_teal: #2d4a54;
+  --bubblegum: #bc4a9b;
+  --pink_dawn: #eb8d9c;
+  --pale_dawn: #ffd8ba;
+
+  --maincolor: var(--sea_teal);
+  --bordercl: var(--bubblegum);
+  --callouctcolor: var(--dark_teal);
+  --hovercolor: var(--bubblegum);
+  --darkMaincolor: #0c7475;
 }
 html {
   color: #3a2b3b;
