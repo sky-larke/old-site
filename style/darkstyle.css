@@ -59,7 +59,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #ddd;
+  color: var(--pale_dawn);
 }
 h1::before {
   color: var(--darkMaincolor);
@@ -88,7 +88,7 @@ h6::before {
 
 a {
   border-bottom: 3px solid var(--darkMaincolor);
-  color: inherit;
+  color: var(--pale-dawn);
 }
 a:hover {
   background-color: var(--bubblegum);
@@ -96,7 +96,7 @@ a:hover {
 }
 
 .site-description a {
-  color: #ddd;
+  color: var(--pale-dawn);
 }
 .site-description a:hover {
   color: var(--aubergine);
