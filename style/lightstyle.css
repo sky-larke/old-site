@@ -1,8 +1,8 @@
 /* Markdown */
 :root{
   --aubergine: #3a2b3b;
-  --sea_teal: #0c7475;
-  --dark_teal: #2d4a54;
+  --sea_teal: #4aa881;
+  --dark_teal: #0c7475;
   --bubblegum: #bc4a9b;
   --pink_dawn: #eb8d9c;
   --pale_dawn: #ffd8ba;
@@ -11,7 +11,7 @@
   --bordercl: var(--bubblegum);
   --callouctcolor: var(--dark_teal);
   --hovercolor: var(--bubblegum);
-  --darkMaincolor: #0c7475;
+  --darkMaincolor: var(--sea_teal);
 }
 html {
   color: #3a2b3b;
@@ -104,30 +104,6 @@ figure h4::before {
   content: '↳ ';
 }
 
-/* Code blocks */
-code {
-  background-color: #f1f1f1;
-  padding: .1em .2em;
-}
-
-pre {
-  background-color: #ececec;
-  line-height: 1.4;
-  overflow-x: auto;
-  padding: 1em;
-}
-
-.highlight pre ::selection {
-  background: rgba(255, 255, 255, 0.2);
-  color: inherit;
-}
-
-pre code {
-  background-color: transparent;
-  color: inherit;
-  font-size: 100%;
-  padding: 0;
-}
 
 /* Containers */
 .content {
@@ -239,69 +215,6 @@ svg{
 .highlight {
   position: relative;
   -webkit-overflow-scrolling: touch;
-}
-.highlight pre code[class*="language-"] {
-  -webkit-overflow-scrolling: touch;
-}
-.highlight pre code[class*="language-"]::before {
-  background: black;
-  border-radius: 0 0 0.25rem 0.25rem;
-  color: white;
-  font-size: 12px;
-  letter-spacing: 0.025rem;
-  padding: 0.1rem 0.5rem;
-  position: absolute;
-  right: 1rem;
-  text-align: right;
-  text-transform: uppercase;
-  top: 0;
-}
-
-.highlight pre code[class=language-javaScript]::before,
-.highlight pre code[class="language-js"]::before {
-content: "js";
-background: #f7df1e;
-color: black;
-}
-.highlight pre code[class*='language-yml']::before,
-.highlight pre code[class*='language-yaml']::before {
-content: 'yaml';
-background: #f71e6a;
-color: white;
-}
-.highlight pre code[class*='language-shell']::before,
-.highlight pre code[class*='language-bash']::before,
-.highlight pre code[class*='language-sh']::before {
-content: 'shell';
-background: green;
-color:white
-}
-.highlight pre code[class*='language-json']::before{
-content: 'json';
-background: dodgerblue;
- color: #000000
-}
-.highlight pre code[class*='language-python']::before,
-.highlight pre code[class*='language-py']::before {
-content: 'py';
-background: blue;
-color: yellow ;
-}
-.highlight pre code[class*='language-css']::before{
-content: 'css';
-background: cyan;
-color: black ;
-}
-.highlight pre code[class*='language-go']::before{
-content: 'Go';
-background: cyan;
-color: royalblue ;
-}
-.highlight pre code[class*='language-md']::before,
-.highlight pre code[class*='language-md']::before{
-content: 'Markdown';
-background: royalblue;
-color: whitesmoke ;
 }
 
 /* table */

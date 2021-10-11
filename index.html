@@ -2,7 +2,7 @@
 <html>
 	<head>
 	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>erin park | home </title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Erin Park </title><meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="" />
 
 	<meta property="og:title" content="Erin Park&#39;s Portfolio" />
@@ -17,60 +17,47 @@
 	<link rel="stylesheet" href="/style/lightstyle.css" >
 	<link id="darkModeStyle" rel="stylesheet" href="/style/darkstyle.css"  disabled />
 
-</head>
+<!-- js scripts -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://unpkg.com/feather-icons"></script>
+	<script>$(function(){
+          $("#header_html").load("/global/header.html");
+          $("#footer_html").load("/global/footer.html"); });
+  </script>
+	</head>
 
 
 <body>
-		<div class="content">
-	<header>
-		<div class="main">
-			<a href="https://www.erinpark.org/">erin park</a>
-		</div>
+<div class="content">
 
-<!-- navigation -->
-		<nav>
+<!-- header -->
+<div id = "header_html"></div>
 
-		<a href="/">home</a>
-		<a href="/posts">all</a>
-		<a href="/about">about</a>
-		<a href="/tags">tags</a>
-		| <a id="dark-mode-toggle" onclick="toggleTheme()" href=""></a>
-
-<!-- js scripts -->
-		<script src="/js/themetoggle.js"></script>
-		<script src="/js/feather.js"></script>
-
-		</nav>
-	</header>
-
-
+<!-- body -->
 	<main class="list">
 			<h1> about </h1>
 			<p> Hi, I'm Erin Park (she/her). I'm currently an undergraduate student at Northwestern University studying mechanical engineering & computer science with a focus upon design.</br></br>
-
 					I do art, program, and play games. I have 7 years of traditional art under my belt & have long had a bit of a pixel art hobby.
 					 <br><br>
 			</p>
 
 			<h1> portfolio </h1>
-			<p class = "ul">
-					<span style = "color:#0c7475"-</span> traditional art: <br>
-					<span style = "color:#0c7475"-</span> pixel art & animation: <br>
-					<span style = "color:#0c7475"-</span> game design: <br>
-					<span style = "color:#0c7475"-</span> engineering: <br>
+			<ul>
+					<li> traditional art       </li>
+					<li> pixel art & animation </li>
+					<li> game design           </li>
+					<li> engineering           </li>
+			</ul>
 
 		</main>
 
-	<footer>
-			<hr><a href="https://github.com/sky-larke" target = "_blank" title="GitHub"><i data-feather="github"></i></a> <a href="https://www.linkedin.com/in/erin--park/" target = "_blank" title="LinkedIn"><i data-feather="linkedin"></i></a> <a href="mailto:erinpark@u.northwestern.edu" target = "_blank" title="Email"><i data-feather="mail"></i></a>|
-	© Erin Park / skylarke |  website theme: <a href="https://github.com/athul/archie" target = "_blank">archie</a> color palette: <a href="https://lospec.com/palette-list/cybergum6" target = "_blank"> cybergum6 </a>
-	</footer>
+		<!-- footer -->
+		<div id="footer_html"></div>
 
-
-<script>
-      feather.replace()
-</script>
+		<script> feather.replace() </script>
 		</div>
+
+
 
 	</body>
 </html>
