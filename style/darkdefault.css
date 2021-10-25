@@ -1,0 +1,8 @@
+:root {
+  --BgColor: #2a2a2a;
+  --InverseBgColor: whitesmoke;
+  --TextColor: whitesmoke;
+  --MainAccent: #00f28e;
+  --SecondAccent: #ff1493;
+  --HighlightColor: var(--SecondAccent);
+}

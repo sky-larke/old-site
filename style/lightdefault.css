@@ -1,0 +1,172 @@
+@import url('<script src="https://kit.fontawesome.com/3e03e1d71e.js" crossorigin="anonymous"></script>');
+
+:root {
+  --BgColor: whitesmoke;
+  --InverseBgColor: #2a2a2a;
+  --TextColor: #3a2b3b;
+  --MainAccent: #ff1493;
+  --SecondAccent: #4e4cc7;
+  --HighlightColor: var(--SecondAccent);
+  --HeaderCurrent: var(--BgColor)
+}
+
+/* Default */
+html {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 15px;
+  line-height: 1.6em;
+  color: var(--TextColor);
+
+}
+body {
+  display: block;
+  margin: 8px;
+  background-color: var(--BgColor);
+}
+
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+::selection {
+  background: var(--HighlightColor);
+  color: var(--BgColor);
+}
+
+svg{
+  max-height: 15px;
+}
+
+
+/* Text Types */
+p {
+  font-family: 'Ibm Plex', sans-serif;
+  line-height: 1.5;
+}
+
+/* Border */
+hr {
+  border: 0;
+  border-top: 3px solid var(--MainAccent);
+  margin: 1em 0;
+}
+
+blockquote {
+  border-left: 3px solid var(--MainAccent);
+  color: #737373;
+  margin: 0;
+  padding-left: 1em;
+}
+
+h1, h2, h3{
+  font-size: 1.2rem;
+  margin-top: 2em;
+}
+
+h1::before {
+  font-family: 'Font Awesome 5 free';
+  color: var(--MainAccent);
+  vertical-align: middle;
+  display: inline-block;
+  content: '\f054';}
+
+a {
+  font-weight: bold;
+  border-bottom: 3px solid var(--MainAccent);
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+    background-color: var(--HighlightColor);
+    color: var(--BgColor);
+}
+
+
+/* Header */
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 1em 0;
+}
+
+header .main {
+  font-size: 1.5rem;
+}
+
+
+/* Footer */
+footer {
+  margin-top: 1em;
+}
+
+/* list */
+ul {
+  list-style: none;
+  padding-left: 2ch;
+}
+ul li {
+  text-indent: -2ch;
+}
+ul > li::before {
+  content: '* ';
+  font-weight: bold;
+}
+
+/* Containers */
+.content {
+  margin-bottom: 4em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+  padding: 0 1ch;
+  word-wrap: break-word;
+}
+
+.meta {
+  color: #999;
+  letter-spacing: -0.5px;
+}
+
+.title h1 {
+  margin-bottom: 0;
+}
+
+time {
+  color: grey;
+}
+
+/* Posts */
+article .title {
+  margin-bottom: 1em;
+}
+
+.tags li::before{
+  content: "🏷 ";
+}
+.tags a{
+  border-bottom: 3px solid var(--MainAccent);
+}
+.tags a:hover{
+  color: var(--BgColor);
+  background-color: var(--HighlightColor);
+}
+
+
+
+/* Table */
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+table th{
+  padding: 6px 13px;
+  border: 1px solid #dfe2e5;
+  font-size: large;
+}
+
+table td{
+  padding: 6px 13px;
+  border: 1px solid #dfe2e5;
+}
