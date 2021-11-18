@@ -6,3 +6,11 @@
   --SecondAccent: #ff1493;
   --HighlightColor: var(--SecondAccent);
 }
+
+::selection {
+  color: var(--InverseBgColor);
+}
+
+a:hover {
+  color: var(--InverseBgColor);
+}
