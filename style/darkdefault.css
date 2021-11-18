@@ -1,16 +1,10 @@
 :root {
-  --BgColor: #2a2a2a;
+  --BgColor: #08121b;
   --InverseBgColor: whitesmoke;
   --TextColor: whitesmoke;
+  --SubTextColor: #abbbc5;
   --MainAccent: #00f28e;
-  --SecondAccent: #ff1493;
+  --SecondAccent: #804eff;
   --HighlightColor: var(--SecondAccent);
-}
-
-::selection {
-  color: var(--InverseBgColor);
-}
-
-a:hover {
-  color: var(--InverseBgColor);
+  --HighlightText: var(--TextColor);
 }

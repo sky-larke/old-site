@@ -4,9 +4,11 @@
   --BgColor: whitesmoke;
   --InverseBgColor: #2a2a2a;
   --TextColor: #3a2b3b;
+  --SubTextColor: gray;
   --MainAccent: #ff1493;
   --SecondAccent: #4e4cc7;
   --HighlightColor: var(--SecondAccent);
+  --HighlightText: var(--BgColor);
 }
 
 /* Default */
@@ -24,7 +26,7 @@ body {
 }
 
 * {
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: var(--MainAccent);
 }
 
 ::selection {
@@ -53,7 +55,7 @@ hr {
 
 blockquote {
   border-left: 3px solid var(--MainAccent);
-  color: #737373;
+  color: var(--SubTextColor);
   margin: 0;
   padding-left: 1em;
 }
@@ -78,7 +80,7 @@ a {
 }
 a:hover {
     background-color: var(--HighlightColor);
-    color: var(--BgColor);
+    color: var(--HighlightText);
 }
 
 i {
@@ -111,9 +113,11 @@ footer {
 ul {
   list-style: none;
   padding-left: 2ch;
+  line-height: 2;
 }
 ul ul {
   list-style: none;
+  color: var(--SubTextColor);
   padding-left: 3ch;
 }
 ul li {
@@ -136,7 +140,7 @@ ul > li::before {
 }
 
 .meta {
-  color: #999;
+  color: var(--SubTextColor);
   letter-spacing: -0.5px;
 }
 
@@ -145,7 +149,7 @@ ul > li::before {
 }
 
 time {
-  color: grey;
+  color: var(--SubTextColor);
 }
 
 /* Posts */
@@ -161,7 +165,7 @@ article .title {
   border-bottom: 3px solid var(--MainAccent);
 }
 .tags a:hover{
-  color: var(--BgColor);
+  color: var(--HighlightText);
   background-color: var(--HighlightColor);
 }
 
@@ -169,26 +173,9 @@ article .title {
 
 blockquote {
   border-left: 3px solid var(--MainAccent);
-  color: #9c9c9c;
+  color: var(--SubTextColor);
   margin: 0;
   padding-left: 1em;
 }
 
 
-
-/* Table */
-table {
-  border-spacing: 0;
-  border-collapse: collapse;
-}
-
-table th{
-  padding: 6px 13px;
-  border: 1px solid #dfe2e5;
-  font-size: large;
-}
-
-table td{
-  padding: 6px 13px;
-  border: 1px solid #dfe2e5;
-}
